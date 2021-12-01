@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "7071822f-3f31-42c2-8136-0e982ba7fbdb",
+		"name": "PaymentAPI Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Cyndya\",\r\n    \"email\": \"cyndyanandhani@gmail.com\",\r\n    \"password\": \"Cyn123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://payment-api-finalproject.herokuapp.com/api/authmanagement/register",
+					"protocol": "https",
+					"host": [
+						"payment-api-finalproject",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"authmanagement",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"namiraabda@gmail.com\",\r\n    \"password\": \"Namm1998!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://payment-api-finalproject.herokuapp.com/api/authmanagement/login",
+					"protocol": "https",
+					"host": [
+						"payment-api-finalproject",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"authmanagement",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFkYjAyMmJkLWZlYTAtNDAyMC1iNGNlLTYzNTAxZjMxN2RiNSIsImVtYWlsIjoibmFtaXJhYWJkYUBnbWFpbC5jb20iLCJzdWIiOiJuYW1pcmFhYmRhQGdtYWlsLmNvbSIsImp0aSI6Ijc4MWI2OTZhLTdkZmEtNGNlYy05OGI4LTMxNzdjNDk3OWI2MCIsIm5iZiI6MTYzODM2NzE3NywiZXhwIjoxNjM4MzY3Mjk3LCJpYXQiOjE2MzgzNjcxNzd9.FBkdx3FsFsfgnSfDJZb1sVAJRs6naL7hteW7aR-ylww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://payment-api-finalproject.herokuapp.com/api/payment/",
+					"protocol": "https",
+					"host": [
+						"payment-api-finalproject",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"payment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFkYjAyMmJkLWZlYTAtNDAyMC1iNGNlLTYzNTAxZjMxN2RiNSIsImVtYWlsIjoibmFtaXJhYWJkYUBnbWFpbC5jb20iLCJzdWIiOiJuYW1pcmFhYmRhQGdtYWlsLmNvbSIsImp0aSI6IjVjMDFmMjg4LWEyNTktNGI0MC05Y2FlLTFhMGE5NjFkM2JiMyIsIm5iZiI6MTYzODM2ODA0NCwiZXhwIjoxNjM4MzY4MTY0LCJpYXQiOjE2MzgzNjgwNDR9.u7Ez_rvqdEnC_eeE79neoNEGNoex1kdjJpo-nrgfAYA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://payment-api-finalproject.herokuapp.com/api/payment/1",
+					"protocol": "https",
+					"host": [
+						"payment-api-finalproject",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"payment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Update Payment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFkYjAyMmJkLWZlYTAtNDAyMC1iNGNlLTYzNTAxZjMxN2RiNSIsImVtYWlsIjoibmFtaXJhYWJkYUBnbWFpbC5jb20iLCJzdWIiOiJuYW1pcmFhYmRhQGdtYWlsLmNvbSIsImp0aSI6IjVjMjZhMmQxLTM0Y2MtNDgwNy1hZTJhLTA0YzkwZTFiNzZkZCIsIm5iZiI6MTYzODM3MDMwMSwiZXhwIjoxNjM4MzcwNDIxLCJpYXQiOjE2MzgzNzAzMDF9.JbZd_kt3uwovGQBID2QT49pdaWHudIsd4RyN6OWVaIY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paymentDetailId\": 2,\r\n    \"cardOwnerName\": \"Nico\",\r\n    \"cardNumber\": \"100-29909-1102\",\r\n    \"expirationDate\": \"2022-10-10\",\r\n    \"securityCode\": \"855330\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://payment-api-finalproject.herokuapp.com/api/payment/2",
+					"protocol": "https",
+					"host": [
+						"payment-api-finalproject",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"payment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Payment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFkYjAyMmJkLWZlYTAtNDAyMC1iNGNlLTYzNTAxZjMxN2RiNSIsImVtYWlsIjoibmFtaXJhYWJkYUBnbWFpbC5jb20iLCJzdWIiOiJuYW1pcmFhYmRhQGdtYWlsLmNvbSIsImp0aSI6IjNmMmMyYjczLTk5YTYtNDY4Yi05Y2RjLTk1YmI0MTYxMzk2NCIsIm5iZiI6MTYzODM3MDc0NSwiZXhwIjoxNjM4MzcwODY1LCJpYXQiOjE2MzgzNzA3NDV9.y441o-a1j8Kwb8Tg4mjKqCPTIrKIf1Bp-GiwaSqO0gM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://payment-api-finalproject.herokuapp.com/api/payment/2",
+					"protocol": "https",
+					"host": [
+						"payment-api-finalproject",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"payment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
