@@ -2539,11 +2539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Documents\\OCBC NISP\\010_AbrahamHaholonganNarmadaPohan_final_project_payment\\PaymentApp\\PaymentApp.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Documents\\OCBC NISP\\Final Project 1\\OCBC-FINALPROJECT-PAYMENT\\PaymentApp\\PaymentApp.csproj",
       "projectName": "PaymentApp",
-      "projectPath": "C:\\Users\\USER\\Documents\\OCBC NISP\\010_AbrahamHaholonganNarmadaPohan_final_project_payment\\PaymentApp\\PaymentApp.csproj",
+      "projectPath": "C:\\Users\\USER\\Documents\\OCBC NISP\\Final Project 1\\OCBC-FINALPROJECT-PAYMENT\\PaymentApp\\PaymentApp.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Documents\\OCBC NISP\\010_AbrahamHaholonganNarmadaPohan_final_project_payment\\PaymentApp\\obj\\",
+      "outputPath": "C:\\Users\\USER\\Documents\\OCBC NISP\\Final Project 1\\OCBC-FINALPROJECT-PAYMENT\\PaymentApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
